@@ -1,4 +1,4 @@
-# pinterest-data-pipeline
+# AiCore Project pinterest-data-pipeline
 
 
 ## Table of Contents
@@ -7,10 +7,9 @@
 * [Project aim](#project-aim)
 * [What I've learned](#what-ive-learned)
 * [Breakdown of steps](#breakdown-of-steps)
-* [Installation](#installation)
+* [Setup](#setup)
 * [Usage](#usage)
 * [File structure](#file-structure)
-* [Run tests](#run-tests)
 * [Licence](#license)
 
 #### Project description
@@ -25,17 +24,36 @@ All configuration is done using AWS. The MSK cluster is already setup along with
 
 #### Project aim
 t.b.c.
+Provide scripted setup so that AWS configuration is automated 
 
 #### What I've learned
   - t.b.c.
 
-#### Configuration steps summary
-1. Configure Kafka client on an EC2 instance 
-   - Install kafka software & IAM MSK authentication package
-   - Add principal to role's trust relationship
-   - Configure bin/client.properties
-2. Create Kafka topics for pin, geo and user
+#### Setup Note
+| AWS Setting                   | Value  |
+|-------------------------------|--------|
+| Zookeeper connection string   |        |
+| Bootstrap brokers             |        |
+| 0e36c8cd403d-ec2-access-role  |        |
 
+
+#### Setup
+##### Pre-requisites
+  - AWS cloud account
+  - MSK Cluster Setup with **zookeeper connection string** and **bootstrap brokers** noted
+  - EC2 Instance exists with 
+  - User setup with region us-east-1 logged into AWS console
+
+##### Milestone 3 
+[Configure the EC2 Kafka client](setup%2Fmilestone3.md)
+
+##### Milestone 4
+1. Create a custom plugin with MSK Connect
+   - Download Confluent.io Amazon S3 Connector onto the EC2 instance
+   - Copy Confluent.io Amazon S3 Connector to S3 bucket
+   - Create the MSK Connect connector referencing the Confluent.io Amazon S3 Connector.zip in S3 bucket
+2. Create a connector with MSK Connect
+   - 
 
 #### License
 Licensed under the [MIT](https://github.com/lmash/pinterest-data-pipeline924/blob/main/LICENSE) license.
