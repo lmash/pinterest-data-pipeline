@@ -9,7 +9,7 @@ tar -xzf kafka_2.12-2.8.1.tgz
 
 **Install IAM MSK authentication package (AWS console)**
 ```commandline
-cd kafka_2.12-2.8.1/libs
+cd /home/ec2-user/kafka_2.12-2.8.1/libs
 wget https://github.com/aws/aws-msk-iam-auth/releases/download/v1.1.5/aws-msk-iam-auth-1.1.5-all.jar
 ```
 
@@ -22,11 +22,11 @@ Note role ARN
 Edit trust relationship to be able to assume the 0e36c8cd403d-ec2-access-role, which contains the necessary permissions to authenticate to the MSK cluster.
 ![3.3.Edit_trust_relationship.jpg](%2F3.3.Edit_trust_relationship.jpg)
 
-**Configure bin/client.properties (AWS console)**
+**Configure Kafka client to use AWS IAM authentication to the cluster (AWS console)**
 ```commandline
-cd ../bin
-touch client.properties
-vi client.properties
+cd /home/ec2-user
+touch kafka_2.12-2.8.1/bin/client.properties
+vi kafka_2.12-2.8.1/bin/client.properties
 ```
 Add the below and then save the file
 ```shell
@@ -44,7 +44,7 @@ sasl.jaas.config=software.amazon.msk.auth.iam.IAMLoginModule required awsRoleArn
 sasl.client.callback.handler.class = software.amazon.msk.auth.iam.IAMClientCallbackHandler
 ```
 
-**Create Kafka topics for pin, geo and user (AWS console)**
+**Create Kafka topics (AWS console)**
 ```commandline
 ./kafka-topics.sh --bootstrap-server b-1.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-3.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-2.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098 --command-config client.properties --create --topic 0e36c8cd403d.pin
 

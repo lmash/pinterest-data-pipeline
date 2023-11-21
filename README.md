@@ -29,31 +29,27 @@ Provide scripted setup so that AWS configuration is automated
 #### What I've learned
   - t.b.c.
 
-#### Setup Note
-| AWS Setting                   | Value  |
-|-------------------------------|--------|
-| Zookeeper connection string   |        |
-| Bootstrap brokers             |        |
-| 0e36c8cd403d-ec2-access-role  |        |
+#### Setup Noted
+| AWS Setting                             | Value                                                                                                                                                                                                             |
+|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Zookeeper connection string (PLAINTEXT) | z-2.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:2181,z-1.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:2181,z-3.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:2181 |
+| Bootstrap brokers                       | b-1.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-3.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-2.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098 |
+| 0e36c8cd403d-ec2-access-role ARN        | arn:aws:iam::584739742957:role/0e36c8cd403d-ec2-access-role                                                                                                                                                       |
+| S3 bucket name                          | user-0e36c8cd403d-bucket                                                                                                                                                                                          |
 
 
 #### Setup
 ##### Pre-requisites
   - AWS cloud account
   - MSK Cluster Setup with **zookeeper connection string** and **bootstrap brokers** noted
-  - EC2 Instance exists with 
-  - User setup with region us-east-1 logged into AWS console
+  - EC2 Instance exists  
+  - User setup with region us-east-1 logged into AWS console and AWS GUI
 
 ##### Milestone 3 
-[Configure the EC2 Kafka client](setup%2Fmilestone3.md)
+[Batch Processing: Configure the EC2 Kafka client](setup%2Fmilestone3.md)
 
 ##### Milestone 4
-1. Create a custom plugin with MSK Connect
-   - Download Confluent.io Amazon S3 Connector onto the EC2 instance
-   - Copy Confluent.io Amazon S3 Connector to S3 bucket
-   - Create the MSK Connect connector referencing the Confluent.io Amazon S3 Connector.zip in S3 bucket
-2. Create a connector with MSK Connect
-   - 
+[Batch Processing: Connect a MSK cluster to a S3 bucket](setup%2Fmilestone4.md)
 
 #### License
 Licensed under the [MIT](https://github.com/lmash/pinterest-data-pipeline924/blob/main/LICENSE) license.
