@@ -64,4 +64,5 @@ t.b.c.
 [Batch Processing: Databricks](setup%2Fmilestone6.md)
 
 #### License
-Licensed under the [MIT](https://github.com/lmash/pinterest-data-pipeline924/blob/main/LICENSE) license.
+
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
