@@ -31,14 +31,14 @@ class AWSDBConnector:
 new_connector = AWSDBConnector()
 
 
-def serialize_datetime(obj):
+class DateTimeEncoder(json.JSONEncoder):
     """
-    A custom function to serialize datetime objects
-    https://www.geeksforgeeks.org/how-to-fix-datetime-datetime-not-json-serializable-in-python/
+    A custom class to serialize datetime objects, overrides the default method
+    https://pynative.com/python-serialize-datetime-into-json/
     """
-    if isinstance(obj, datetime.datetime):
-        return obj.isoformat()
-    raise TypeError("Type not serializable")
+    def default(self, obj):
+        if isinstance(obj, (datetime.date, datetime.datetime)):
+            return obj.isoformat()
 
 
 @dataclass
@@ -72,19 +72,19 @@ def run_infinite_post_data_loop():
 
                 payload = json.dumps({
                     "records": [{"value": result}]
-                }, default=serialize_datetime)
+                }, cls=DateTimeEncoder)
 
                 headers = {'Content-Type': 'application/vnd.kafka.json.v2+json'}
                 response = requests.request("POST", post_data.invoke_url, headers=headers, data=payload)
 
-                print(result)
+                print(payload)
                 print(response.status_code)
 
 
 if __name__ == "__main__":
     run_infinite_post_data_loop()
     print('Working')
-    
+
     
 
 
