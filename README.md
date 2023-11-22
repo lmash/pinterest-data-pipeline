@@ -29,6 +29,9 @@ Consolidate data engineering concepts covered.
 #### What I've learned
   - t.b.c.
 
+#### File structure
+t.b.c.
+
 #### Setup Noted
 | AWS Setting                             | Value                                                                                                                                                                                                             |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,6 +59,9 @@ Consolidate data engineering concepts covered.
 
 ##### Milestone 5
 [Batch Processing: Configuring an API in API Gateway](setup%2Fmilestone5.md)
+
+##### Milestone 6
+[Batch Processing: Databricks](setup%2Fmilestone6.md)
 
 #### License
 Licensed under the [MIT](https://github.com/lmash/pinterest-data-pipeline924/blob/main/LICENSE) license.

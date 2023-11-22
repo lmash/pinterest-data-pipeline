@@ -54,3 +54,27 @@ client.sasl.client.callback.handler.class = software.amazon.msk.auth.iam.IAMClie
 ![5.2.3._REST_proxy_started.jpg](5.2.3._REST_proxy_started.jpg)
 
 ### Send data to the API
+**Modify user_posting_emulation.py to send data to Kafka topics**
+[user_posting_emulation.py](..%2Fuser_posting_emulation.py)
+
+**Check data is sent to Kafka topics with the consumer (AWS console)**
+
+Terminal 1
+```
+cd kafka_2.12-2.8.1/bin
+./kafka-console-consumer.sh --topic 0e36c8cd403d.pin --from-beginning --consumer.config client.properties --group students --bootstrap-server b-1.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-3.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-2.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098
+```
+Terminal 2
+```
+cd kafka_2.12-2.8.1/bin
+./kafka-console-consumer.sh --topic 0e36c8cd403d.geo --from-beginning --consumer.config client.properties --group students --bootstrap-server b-1.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-3.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-2.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098
+```
+Terminal 3
+```
+cd kafka_2.12-2.8.1/bin
+./kafka-console-consumer.sh --topic 0e36c8cd403d.user --from-beginning --consumer.config client.properties --group students --bootstrap-server b-1.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-3.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-2.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098
+```
+![5.3.2.Consumers_PinGeoUser.jpg](5.3.2.Consumers_PinGeoUser.jpg)
+
+**Check data is getting stored in the S3 Bucket**
+![5.3.3.Data_in_S3_bucket.jpg](5.3.3.Data_in_S3_bucket.jpg)
