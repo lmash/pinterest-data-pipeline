@@ -55,7 +55,7 @@ client.sasl.client.callback.handler.class = software.amazon.msk.auth.iam.IAMClie
 
 ### Send data to the API
 **Modify user_posting_emulation.py to send data to Kafka topics**
-[user_posting_emulation.py](..%2Fuser_posting_emulation.py)
+[user_posting_emulation.py](..%2F..%2Fuser_posting_emulation.py)
 
 **Check data is sent to Kafka topics with the consumer (AWS console)**
 

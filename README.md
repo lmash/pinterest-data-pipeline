@@ -51,17 +51,14 @@ t.b.c.
   - User setup with region us-east-1 logged into AWS console and AWS GUI
   - API REST Gateway
 
-##### Milestone 3 
-[Batch Processing: Configure the EC2 Kafka client](setup%2Fmilestone3.md)
+##### Milestones 
+[Milestone 3 Batch Processing: Configure the EC2 Kafka client](milestone%2F3%2Fmilestone3.md)
 
-##### Milestone 4
-[Batch Processing: Connect a MSK cluster to a S3 bucket](setup%2Fmilestone4.md)
+[Milestone 4 Batch Processing: Connect a MSK cluster to a S3 bucket](milestone%2F4%2Fmilestone4.md)
 
-##### Milestone 5
-[Batch Processing: Configuring an API in API Gateway](setup%2Fmilestone5.md)
+[Milestone 5 Batch Processing: Configuring an API in API Gateway](milestone%2F5%2Fmilestone5.md)
 
-##### Milestone 6
-[Batch Processing: Databricks](setup%2Fmilestone6.md)
+[Milestone 6 Batch Processing: Databricks](milestone%2F6%2Fmilestone6.md)
 
 #### License
 
