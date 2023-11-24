@@ -10,6 +10,7 @@ dbutils.fs.ls("/FileStore/tables")
 
 **Read the csv with AWS keys into a spark dataframe**
 ![6.2.2.Read csv with aws keys.jpg](6.2.2.Read_csv_with_aws_keys.jpg)
+[Read the csv with AWS keys into a spark dataframe](..%2F..%2FM6.1%20Mount%20an%20AWS%20S3%20bucket%20to%20Databricks%202023-11-22%2016_01_54.ipynb)
 
 **Extract AWS access key and secret key from spark dataframe**
 ![6.2.3.Extract_keys.jpg](6.2.3.Extract_keys.jpg)

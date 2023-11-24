@@ -77,8 +77,8 @@ def run_infinite_post_data_loop():
                 headers = {'Content-Type': 'application/vnd.kafka.json.v2+json'}
                 response = requests.request("POST", data_point.invoke_url, headers=headers, data=payload)
 
-                print(payload)
-                print(response.status_code)
+                # print(payload)
+                # print(response.status_code)
 
 
 if __name__ == "__main__":

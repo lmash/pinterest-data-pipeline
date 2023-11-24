@@ -60,6 +60,8 @@ t.b.c.
 
 [Milestone 6 Batch Processing: Databricks](milestone%2F6%2Fmilestone6.md)
 
+[Milestone 7 Batch Processing: Spark on Databricks](milestone%2F7%2Fmilestone7.md)
+
 #### License
 
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
