@@ -19,7 +19,7 @@ default_args = {
 
 with DAG('0e36c8cd403d_dag',
          start_date=datetime(2023, 11, 27),
-         schedule_interval='0 6 * * 1-5',
+         schedule_interval='0 6 * * *',
          catchup=False,
          default_args=default_args
          ) as dag:
