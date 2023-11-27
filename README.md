@@ -62,6 +62,8 @@ t.b.c.
 
 [Milestone 7 Batch Processing: Spark on Databricks](milestone%2F7%2Fmilestone7.md)
 
+[Milestone 8 Batch Processing: AWS MWAA](milestone%2F8%2Fmilestone8.md)
+
 #### License
 
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
