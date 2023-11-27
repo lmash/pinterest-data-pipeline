@@ -12,3 +12,12 @@ All steps performed in Databricks
 
 **Find the most popular category in each country**
 ![7.4.Most_popular_category_by_country.jpg](7.4.Most_popular_category_by_country.jpg)
+
+**Find which was the most popular category each year between 2018 and 2022**
+![7.5.Most_popular_category_by_year.jpg](7.5.Most_popular_category_by_year.jpg)
+
+**Find the user with the most followers in each country**
+![7.6.1.User_with_most_followers_by_country.jpg](7.6.1.User_with_most_followers_by_country.jpg)
+
+**Find the country with the user with most followers**
+![7.6.2.Country_with_user_with_most_followers.jpg](7.6.2.Country_with_user_with_most_followers.jpg)
