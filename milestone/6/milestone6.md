@@ -1,4 +1,4 @@
-### Mount a S3 bucket to Databricks
+### Task 2: Mount a S3 bucket to Databricks
 Pre-requisite: Databricks account has full access to S3 bucket with Access Key & Secret Access Key in authentication_credentials.csv
 All steps performed in Databricks
 

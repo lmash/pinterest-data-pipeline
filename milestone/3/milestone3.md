@@ -1,4 +1,4 @@
-### Set up Kafka on the EC2 instance
+### Task 3: Set up Kafka on the EC2 instance
 
 **Install kafka software (AWS console)**
 ```commandline
@@ -44,7 +44,8 @@ sasl.jaas.config=software.amazon.msk.auth.iam.IAMLoginModule required awsRoleArn
 sasl.client.callback.handler.class = software.amazon.msk.auth.iam.IAMClientCallbackHandler
 ```
 
-**Create Kafka topics (AWS console)**
+### Task 4: Create Kafka topics
+On the AWS console
 ```commandline
 ./kafka-topics.sh --bootstrap-server b-1.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-3.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-2.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098 --command-config client.properties --create --topic 0e36c8cd403d.pin
 

@@ -1,4 +1,4 @@
-### Create a custom plugin with MSK Connect
+### Task 1: Create a custom plugin with MSK Connect
 **Note S3 bucket name (AWS GUI)**
 
 https://s3.console.aws.amazon.com/s3/buckets/user-0e36c8cd403d-bucket?region=us-east-1&tab=objects
@@ -19,7 +19,7 @@ https://us-east-1.console.aws.amazon.com/msk/home?region=us-east-1#/customPlugin
 The plugin should reference Confluent.io Amazon S3 Connector.zip copied to the S3 bucket
 ![4.1.3.MSK_custom_plugin.jpg](4.1.3.MSK_custom_plugin.jpg)
 
-### Create a connector with MSK Connect
+### Task 2: Create a connector with MSK Connect
 
 https://us-east-1.console.aws.amazon.com/msk/home?region=us-east-1#/connector/create
 ![4.2.Create_MSK_Connector.jpg](4.2.Create_MSK_Connector.jpg)

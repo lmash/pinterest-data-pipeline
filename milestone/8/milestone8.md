@@ -1,4 +1,4 @@
-### Orchestrate Databricks Workloads on AWS MWAA
+### Task 1: Create and upload a DAG to a MWAA environment
 
 **Get Databricks Notebook path (Databricks)**
 ```
@@ -21,6 +21,6 @@ DAG uploaded to mwaa-dags-bucket
 ![8.1.DAG_uploaded.jpg](8.1.DAG_uploaded.jpg)
 
 
-**Trigger a DAG that runs a Databricks Notebook**
+### Task 2: Trigger a DAG that runs a Databricks Notebook
 ![8.2.2.Trigger_DAG.jpg](8.2.2.Trigger_DAG.jpg)
 ![8.2.3.DAG_run_success.jpg](8.2.3.DAG_run_success.jpg)

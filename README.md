@@ -41,6 +41,7 @@ t.b.c.
 | S3 bucket name                          | user-0e36c8cd403d-bucket                                                                                                                                                                                          |
 | EC2 public DNS                          | ec2-107-22-147-56.compute-1.amazonaws.com                                                                                                                                                                         |
 | Invoke URL (API Gateway)                | https://jydbc247f4.execute-api.us-east-1.amazonaws.com/Prod                                                                                                                                                       |
+| 0e36c8cd403d-kinesis-access-role ARN    | arn:aws:iam::584739742957:role/0e36c8cd403d-kinesis-access-role                                                                                                                                                   |
 
 
 #### Setup

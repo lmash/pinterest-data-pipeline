@@ -1,4 +1,4 @@
-### Build a Kafka REST proxy integration method for the API
+### Task 1: Build a Kafka REST proxy integration method for the API
 API REST Gateway with no resources is provided
 
 **Create a resource that allows you to build a PROXY integration for the API (AWS GUI)**
@@ -14,7 +14,7 @@ Deploy the API
 ![5.1.3.Deploy API.jpg](5.1.3.Deploy%20API.jpg)
 ![5.1.3.Deployed.jpg](5.1.3.Deployed.jpg)
 
-### Set up the Kafka REST proxy on the EC2 client
+### Task 2: Set up the Kafka REST proxy on the EC2 client
 **Install the confluent package for Kafka REST proxy on EC2 client (AWS console)**
 ```commandline
 cd /home/ec2-user/
@@ -53,7 +53,7 @@ client.sasl.client.callback.handler.class = software.amazon.msk.auth.iam.IAMClie
 ```
 ![5.2.3._REST_proxy_started.jpg](5.2.3._REST_proxy_started.jpg)
 
-### Send data to the API
+### Task 3: Send data to the API
 **Modify user_posting_emulation.py to send data to Kafka topics**
 [user_posting_emulation.py](..%2F..%2Fuser_posting_emulation.py)
 
