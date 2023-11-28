@@ -79,7 +79,7 @@ Create methods for each of the below using the same steps as the above with the 
             "PartitionKey": "$elem.partition-key"
           }#if($foreach.hasNext),#end
         #end
-    ]
+    ] 
 }
 ```
 ### Task 3: Send data to the Kinesis streams
