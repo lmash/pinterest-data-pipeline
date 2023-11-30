@@ -48,8 +48,6 @@ class DataPointType:
 
 
 def run_infinite_post_data_loop():
-    invoke_url = "https://jydbc247f4.execute-api.us-east-1.amazonaws.com/Prod/streams/<stream_name>/record"
-
     data_point_types = [
         DataPointType(
             table_name='geolocation_data',
@@ -76,6 +74,9 @@ def run_infinite_post_data_loop():
         with engine.connect() as connection:
 
             for data_point in data_point_types:
+                invoke_url = f"https://jydbc247f4.execute-api.us-east-1.amazonaws.com/Prod/streams/" \
+                             f"{data_point.stream_name}/record"
+
                 select_statement = text(f"SELECT * FROM {data_point.table_name} LIMIT {random_row}, 1")
                 selected_row = connection.execute(select_statement)
 
@@ -84,10 +85,13 @@ def run_infinite_post_data_loop():
 
                 payload = json.dumps({"StreamName": data_point.stream_name,
                                       "Data": result,
-                                      "PartitionKey": data_point.partition_key
+                                      "PartitionKey": data_point.partition_key,
                                       }, cls=DateTimeEncoder)
 
-                requests.request("PUT", invoke_url, headers=HEADERS, data=payload)
+                response = requests.request("PUT", invoke_url, headers=HEADERS, data=payload)
+                print(f"Status code: {response.status_code} "
+                      f"Response text: {response.text}\n"
+                      f"for payload: {payload}")
 
 
 if __name__ == "__main__":

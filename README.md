@@ -53,17 +53,17 @@ t.b.c.
   - API REST Gateway
 
 ##### Milestones 
-[Milestone 3 Batch Processing: Configure the EC2 Kafka client](milestone%2F3%2Fmilestone3.md)
+[Milestone 3 Batch Processing: Configure the EC2 Kafka client](documentation%2F3%2Fmilestone3.md)
 
-[Milestone 4 Batch Processing: Connect a MSK cluster to a S3 bucket](milestone%2F4%2Fmilestone4.md)
+[Milestone 4 Batch Processing: Connect a MSK cluster to a S3 bucket](documentation%2F4%2Fmilestone4.md)
 
-[Milestone 5 Batch Processing: Configuring an API in API Gateway](milestone%2F5%2Fmilestone5.md)
+[Milestone 5 Batch Processing: Configuring an API in API Gateway](documentation%2F5%2Fmilestone5.md)
 
-[Milestone 6 Batch Processing: Databricks](milestone%2F6%2Fmilestone6.md)
+[Milestone 6 Batch Processing: Databricks](documentation%2F6%2Fmilestone6.md)
 
-[Milestone 7 Batch Processing: Spark on Databricks](milestone%2F7%2Fmilestone7.md)
+[Milestone 7 Batch Processing: Spark on Databricks](documentation%2F7%2Fmilestone7.md)
 
-[Milestone 8 Batch Processing: AWS MWAA](milestone%2F8%2Fmilestone8.md)
+[Milestone 8 Batch Processing: AWS MWAA](documentation%2F8%2Fmilestone8.md)
 
 #### License
 

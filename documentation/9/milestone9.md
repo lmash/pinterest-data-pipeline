@@ -86,9 +86,19 @@ Create methods for each of the below using the same steps as the above with the 
 [9_user_posting_emulation_streaming.py](..%2F..%2F9_user_posting_emulation_streaming.py)
 
 ### Task 4: Read data from Kinesis streams in databricks
-
+![9.4.1.GeoData.jpg](9.4.1.GeoData.jpg)
+![9.4.2.PinData.jpg](9.4.2.PinData.jpg)
+![9.4.3.UserData.jpg](9.4.3.UserData.jpg)
 
 ### Task 5: Transform Kinesis streams in databricks
+As we are streaming the same data we processed in batch if the data is in a matching dataframe it can be processed with the same cleaning queries
+**Create a scheme for each dataframe**
+![9.5.1.CreateStructures.jpg](9.5.1.CreateStructures.jpg)
+**Convert string data to multiple fields**
+![9.5.2.ConvertData.jpg](9.5.2.ConvertData.jpg)
 
+**Clean data**
+
+Use the same queries as Milestone 7
 
 ### Task 6: Write the streaming data to Delta Tables
