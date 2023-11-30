@@ -98,7 +98,17 @@ As we are streaming the same data we processed in batch if the data is in a matc
 ![9.5.2.ConvertData.jpg](9.5.2.ConvertData.jpg)
 
 **Clean data**
-
 Use the same queries as Milestone 7
 
 ### Task 6: Write the streaming data to Delta Tables
+**Write streaming pin data**
+![9.6.1.Write_pin.jpg](9.6.1.Write_pin.jpg)
+![9.6.2.Pin_data_written.jpg](9.6.2.Pin_data_written.jpg)
+
+**Write streaming geo data**
+![9.6.3.Write_geo.jpg](9.6.3.Write_geo.jpg)
+![9.6.4.Geo_data_written.jpg](9.6.4.Geo_data_written.jpg)
+
+**Write streaming user data**
+![9.6.5.Write_user.jpg](9.6.5.Write_user.jpg)
+![9.6.6.User_data_written.jpg](9.6.6.User_data_written.jpg)
