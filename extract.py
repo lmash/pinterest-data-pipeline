@@ -18,7 +18,8 @@ class AWSDBConnector:
 
     def create_db_connector(self):
         engine = sqlalchemy.create_engine(
-            f"mysql+pymysql://{self.USER}:{self.PASSWORD}@{self.HOST}:{self.PORT}/{self.DATABASE}?charset=utf8mb4")
+            f"mysql+pymysql://{self.USER}:{self.PASSWORD}@{self.HOST}:{self.PORT}/{self.DATABASE}?charset=utf8mb4"
+        )
         return engine
 
 
@@ -27,6 +28,7 @@ class DateTimeEncoder(json.JSONEncoder):
     A custom class to serialize datetime objects, overrides the default method
     https://pynative.com/python-serialize-datetime-into-json/
     """
+
     def default(self, obj):
         if isinstance(obj, (datetime.date, datetime.datetime)):
             return obj.isoformat()
