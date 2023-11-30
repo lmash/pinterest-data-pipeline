@@ -9,7 +9,7 @@
 * [Breakdown of steps](#breakdown-of-steps)
 * [Setup](#setup)
 * [Usage](#usage)
-* [File structure](#file-structure)
+* [Description of files](#description-of-files)
 * [Licence](#license)
 
 #### Project description
@@ -24,25 +24,22 @@ All configuration is done using AWS. The MSK cluster is already setup along with
 
 
 #### Project aim
-Consolidate data engineering concepts covered. 
+Put into practice concepts learnt about AWS, Apache Kafka, Apache Spark, Apache Airflow and Databricks.  
 
 #### What I've learned
-  - t.b.c.
+  - A pipeline consists of many independent parts, each which has to be configured, tested and implemented correctly
+  - Working 
 
-#### File structure
-t.b.c.
-
-#### Setup Noted
-| AWS Setting                             | Value                                                                                                                                                                                                             |
-|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Zookeeper connection string (PLAINTEXT) | z-2.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:2181,z-1.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:2181,z-3.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:2181 |
-| Bootstrap brokers                       | b-1.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-3.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098,b-2.pinterestmskcluster.w8g8jt.c12.kafka.us-east-1.amazonaws.com:9098 |
-| 0e36c8cd403d-ec2-access-role ARN        | arn:aws:iam::584739742957:role/0e36c8cd403d-ec2-access-role                                                                                                                                                       |
-| S3 bucket name                          | user-0e36c8cd403d-bucket                                                                                                                                                                                          |
-| EC2 public DNS                          | ec2-107-22-147-56.compute-1.amazonaws.com                                                                                                                                                                         |
-| Invoke URL (API Gateway)                | https://jydbc247f4.execute-api.us-east-1.amazonaws.com/Prod                                                                                                                                                       |
-| 0e36c8cd403d-kinesis-access-role ARN    | arn:aws:iam::584739742957:role/0e36c8cd403d-kinesis-access-role                                                                                                                                                   |
-
+#### Description of files
+| filename                              | description                                                                                                                                                               |
+|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5_user_posting_emulation.py           | Python file (markdown format) description of the project.                                                                                                                 |
+| 6_mount_S3_bucket.ipynb               | Text file of packages to be installed by pip.                                                                                                                             |
+| 7_batch_read_clean_query.ipynb        | Text file for API keys to be populated and renamed.                                                                                                                       |
+| 8_0e36c8cd403d_dag.py                 | Javascript file. Contains most of the review and edit logic. Updates stars and ratings and re displays them after saving. <br/>Displays changed description after saving. |
+| 9_stream_read_clean_write.ipynb       | Javascript file. Enables bootstrap tooltips.                                                                                                                              |
+| 9_user_posting_emulation_streaming.py | Css file with shared styling for the project.                                                                                                                             |
+| README.md                             | Text file (markdown format) description of the project.                                                                                                                   |
 
 #### Setup
 ##### Pre-requisites
@@ -64,6 +61,8 @@ t.b.c.
 [Milestone 7 Batch Processing: Spark on Databricks](documentation%2F7%2Fmilestone7.md)
 
 [Milestone 8 Batch Processing: AWS MWAA](documentation%2F8%2Fmilestone8.md)
+
+[Milestone 9 Stream Processing: AWS Kinesis](documentation%2F9%2Fmilestone9.md)
 
 #### License
 
