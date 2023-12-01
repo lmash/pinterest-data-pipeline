@@ -12,6 +12,13 @@ HEADERS = {'Content-Type': 'application/json'}
 
 
 def run_infinite_post_data_loop():
+    """
+    This function runs until it's manually stopped.
+    For 3 types of data (Pinterest, User and GeoLocation) it does the following
+      - Read data from an AWS database
+      - Create a JSON payload
+      - Send the payload as a PUT request to an AWS API Gateway
+    """
     streams_endpoint_url = f"https://jydbc247f4.execute-api.us-east-1.amazonaws.com/Prod/streams/"
 
     data_point_types = [

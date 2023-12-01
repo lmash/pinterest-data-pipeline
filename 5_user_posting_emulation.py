@@ -12,6 +12,13 @@ HEADERS = {'Content-Type': 'application/vnd.kafka.json.v2+json'}
 
 
 def run_infinite_post_data_loop():
+    """
+    This function runs until it's manually stopped.
+    For 3 types of data (Pinterest, User and GeoLocation) it does the following
+      - Read data from an AWS database
+      - Create a JSON payload
+      - Send the payload as a POST request to an AWS API Gateway
+    """
     topics_endpoint_url = 'https://jydbc247f4.execute-api.us-east-1.amazonaws.com/Prod/topics/0e36c8cd403d'
 
     data_point_types = [

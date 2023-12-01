@@ -3,7 +3,7 @@ from airflow.providers.databricks.operators.databricks import DatabricksSubmitRu
 from datetime import datetime, timedelta
 
 # Define params for Submit Run Operator
-notebook_task = {'notebook_path': '/Users/lmachet@yahoo.com/Read, Clean, Query'}
+notebook_task = {'notebook_path': '/Users/lmachet@yahoo.com/batch_read_clean_query'}
 
 # Define params for Run Now Operator
 notebook_params = {}

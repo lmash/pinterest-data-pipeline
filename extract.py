@@ -5,9 +5,7 @@ import sqlalchemy
 
 
 class AWSDBConnector:
-    """
-    A class to connect to an AWS hosted database
-    """
+    """A class to connect to an AWS hosted database"""
 
     def __init__(self):
         self.HOST = "pinterestdbreadonly.cq2e8zno855e.eu-west-1.rds.amazonaws.com"

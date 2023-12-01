@@ -15,7 +15,7 @@ spark.conf.get("spark.databricks.clusterUsageTags.clusterId")
 Pre-Requisite: AWS account has access to MWAA environment Databricks-Airflow-env and to its S3 bucket mwaa-dags-bucket.
 S3 bucket mwaa-dags-bucket contains a requirements.txt 
 
-DAG created: [0e36c8cd403d_dag.py](..%2F..%2F0e36c8cd403d_dag.py)
+DAG created: [8_0e36c8cd403d_dag.py](..%2F..%2F8_0e36c8cd403d_dag.py)
 
 DAG uploaded to mwaa-dags-bucket
 ![8.1.DAG_uploaded.jpg](8.1.DAG_uploaded.jpg)
