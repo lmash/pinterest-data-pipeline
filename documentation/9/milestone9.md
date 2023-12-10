@@ -83,7 +83,7 @@ Create methods for each of the below using the same steps as the above with the 
 }
 ```
 ### Task 3: Send data to the Kinesis streams
-[9_user_posting_emulation_streaming.py](..%2F..%2F9_user_posting_emulation_streaming.py)
+[9_stream_user_posting_emulation.py](..%2F..%2F9_stream_user_posting_emulation.py)
 
 ### Task 4: Read data from Kinesis streams in databricks
 ![9.4.1.GeoData.jpg](9.4.1.GeoData.jpg)

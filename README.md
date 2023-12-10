@@ -46,16 +46,17 @@ I used Databricks to create Notebooks with python & pyspark commands.
   - This project is only the tip of the iceberg, lots left to still learn.
 
 #### Description of files
-| filename                            | description                                                                                               |
-|-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| 5_batch_user_posting_emulation.py   | Python file which extracts data from an AWS database and creates HTTP POST messages for batch processing. |
-| 6_batch_mount_S3_bucket.ipynb       | Databricks notebook for mounting an S3 bucket.                                                            |
-| 7_batch_read_clean_query.ipynb      | Databricks notebook with code to read, clean and query Pinterest batch data.                              |
-| 8_batch_0e36c8cd403d_dag.py         | Python file. Contains code for MWAA (AWS managed Airflow) to schedule a Databricks notebook run           |
-| 9_stream_read_clean_write.ipynb     | Databricks notebook with code to read and clean Pinterest stream data, and then write it to Delta Tables. |
-| 9_stream_user_posting_emulation.py  | Python file which extracts data from an AWS database and creates HTTP PUT messages for stream processing. |
-| README.md                           | Text file (markdown format) description of the project.                                                   |
-| extract.py                          | Classes used for data extraction.                                                                         |
+| filename                           | description                                                                                                                   |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| 5_batch_user_posting_emulation.py  | Python file which runs the process to extract data from an AWS database and create HTTP POST messages for batch processing.   |
+| 6_batch_mount_S3_bucket.ipynb      | Databricks notebook for mounting an S3 bucket.                                                                                |
+| 7_batch_read_clean_query.ipynb     | Databricks notebook with code to read, clean and query Pinterest batch data.                                                  |
+| 8_batch_0e36c8cd403d_dag.py        | Python file. Contains code for MWAA (AWS managed Airflow) to schedule a Databricks notebook run                               |
+| 9_stream_read_clean_write.ipynb    | Databricks notebook with code to read and clean Pinterest stream data, and then write it to Delta Tables.                     |
+| 9_stream_user_posting_emulation.py | Python file which runs the process to extract data from an AWS database and create HTTP PUT messages for stream processing.   |
+| README.md                          | Text file (markdown format) description of the project.                                                                       |
+| config.py                          | Dataclasses and configuration for data extraction.                                                                            |
+| extract.py                         | Classes used for data extraction.                                                                                             |
 
 #### Setup and Usage
 The project was split into milestones. Work done for each of the milestones has been documented in the links below
