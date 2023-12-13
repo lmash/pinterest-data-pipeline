@@ -1,13 +1,7 @@
 All steps performed in Databricks
 
-### Task 1: Clean the DataFrame that contains information about Pinterest posts
-![7.1.Clean_pin_data.jpg](7.1.Clean_pin_data.jpg)
-
-### Task 2: Clean the DataFrame that contains information about geolocation
-![7.2.Clean_geo_data.jpg](7.2.Clean_geo_data.jpg)
-
-### Task 3: Clean the DataFrame that contains information about users
-![7.3.Clean_user_data.jpg](7.3.Clean_user_data.jpg)
+### Task 1 - 3: Clean the Data
+[Clean pin, geo & user data](..%2F..%2Futils%2Fclean.ipynb)
 
 ### Task 4: Find the most popular category in each country
 ![7.4.Most_popular_category_by_country.jpg](7.4.Most_popular_category_by_country.jpg)

@@ -92,13 +92,15 @@ Create methods for each of the below using the same steps as the above with the 
 
 ### Task 5: Transform Kinesis streams in databricks
 As we are streaming the same data we processed in batch if the data is in a matching dataframe it can be processed with the same cleaning queries
-**Create a scheme for each dataframe**
-![9.5.1.CreateStructures.jpg](9.5.1.CreateStructures.jpg)
+[authenticate](..%2F..%2Futils%2Fauthenticate.ipynb)
+
+[Create the Schema](..%2F..%2Futils%2Fcreate_schemas.ipynb)
+
 **Convert string data to multiple fields**
 ![9.5.2.ConvertData.jpg](9.5.2.ConvertData.jpg)
 
 **Clean data**
-Use the same queries as Milestone 7
+[Clean pin, geo & user data](..%2F..%2Futils%2Fclean.ipynb)
 
 ### Task 6: Write the streaming data to Delta Tables
 **Write streaming pin data**

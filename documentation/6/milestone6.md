@@ -2,21 +2,12 @@
 Pre-requisite: Databricks account has full access to S3 bucket with Access Key & Secret Access Key in authentication_credentials.csv
 All steps performed in Databricks
 
-**Check for authentication_credentials.csv**
-```
-dbutils.fs.ls("/FileStore/tables")
-```
-![6.2.Credentials.jpg](6.2.1.Credentials.jpg)
-
-**Read the csv with AWS keys into a spark dataframe**
-![6.2.2.Read csv with aws keys.jpg](6.2.2.Read_csv_with_aws_keys.jpg)
-[Read the csv with AWS keys into a spark dataframe](..%2F..%2FM6.1%20Mount%20an%20AWS%20S3%20bucket%20to%20Databricks%202023-11-22%2016_01_54.ipynb)
-
-**Extract AWS access key and secret key from spark dataframe**
-![6.2.3.Extract_keys.jpg](6.2.3.Extract_keys.jpg)
+[authenticate](..%2F..%2Futils%2Fauthenticate.ipynb)
 
 **Mount the S3 bucket**
 ![6.2.3.Mount_S3_bucket.jpg](6.2.3.Mount_S3_bucket.jpg)
+
+[Create the Schema](..%2F..%2Futils%2Fcreate_schemas.ipynb)
 
 **Create the 3 dataframes**
 ![6.2.4.Create_3_dataframes.jpg](6.2.4.Create_3_dataframes.jpg)
