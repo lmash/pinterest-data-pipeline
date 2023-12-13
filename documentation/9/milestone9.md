@@ -92,6 +92,7 @@ Create methods for each of the below using the same steps as the above with the 
 
 ### Task 5: Transform Kinesis streams in databricks
 As we are streaming the same data we processed in batch if the data is in a matching dataframe it can be processed with the same cleaning queries
+
 [authenticate](..%2F..%2Futils%2Fauthenticate.ipynb)
 
 [Create the Schema](..%2F..%2Futils%2Fcreate_schemas.ipynb)
